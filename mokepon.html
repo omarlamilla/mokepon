@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Pokebolas</title>
+        <link href="./styles/style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet" type="text/css">
+        
+    </head>
+    <body>
+        <h1>Pokebolas¡</h1>
+        <p id="culo"></p>
+
+        <script>
+        document.getElementById("culo").innerHTML = "BIENVENIDO"
+        </script>
+
+        <a href="https://www.youtube.com/">yotuube</a>
+ 
+
+        <section id="seleccionar-mascota">
+            <h2>Elije tu mascota:</h2>
+
+            <!-- <img src="/home/omar/Downloads/cucarron.jpg.webp"> -->
+            
+            <label for="cucarrón">Cucarrón</label>
+            <input type="radio" name="mascota" id="cucarrón"/>
+            <label for="cucaracha">cucaracha</label>
+            <input type="radio" name="mascota" id="cucaracha"/>
+            <button id="boton-mascota">selecciona</button>
+            <p>tu mascota <span id="tumascota"></span> tiene <span>3</span> vidas</p>
+            <p>La mascota del enemigo <span id="mascotaenemigo"></span> tiene <span>3</span> vidas</p>  
+        </section>
+
+        <section id="seleccionar-ataque">
+            <h2>Elje tu ataque</h2>
+            <ul>
+                <li><button id="boton-semen">semen</button></li>
+                <li><button id="boton-sangre">sangre</button></li>
+                <li><button id="boton-sudor">sudor</button></li>
+            </ul>
+        </section>
+
+        <section id="notas">
+            <p>Tu mascota eligió <span id="poder-elegido">.</span> el enemigo eligió <span id="poder-enemigo-aleatorio"></span></p>
+        </section>
+
+        <section id="reiniciar">
+            <p>
+                <button>reiniciar</button>
+            </p>
+        </section>
+        <script src="./jsmokepon/mokepon.js"></script>
+    </body>
+</html>
